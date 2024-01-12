@@ -1,0 +1,49 @@
+# Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+
+pids
+*.pid
+*.seed
+*.pid.lock
+
+.eslintcache
+
+
+.node_repl_history
+
+
+*.tgz
+
+
+yarn-error.log
+yarn.lock
+
+
+.env
+.env.local
+.env.*.local
+
+# VSCode directories
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# SFTP configuration file
+.sftpCache
+
+# Sublime Text directories
+.svn/
