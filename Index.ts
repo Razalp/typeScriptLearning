@@ -3,22 +3,22 @@
 // userName=0
 
 //defining type (explicit Type);
-let userName :String ='razal'
-let phoneno :Number =8129933192
+let userName :string ='razal'
+let phoneno :number =8129933192
 let doYouWant : boolean=true
-let skils : String[] =["JS","TS","CSS"]
-let count :Number[] =[1,2,3,4,4,5]
+let skils : string[] =["JS","TS","CSS"]
+let count :number[] =[1,2,3,4,4,5]
 let array:[]=[]
-let userDetailes : {name:String,age:Number ,salery:Number} ={name:"razal",
+let userDetailes : {name:string,age:number ,salery:number} ={name:"razal",
 age:19
 }
 console.log(userDetailes)
 
 //interface
 interface Detailes {
-    name?:String;//opetional
-    age?:Number | String;
-    salery?:Number;
+    name?:string;//opetional
+    age?:number | string;
+    salery?:number;
 }
 
 let UserDetailes : Detailes = {
@@ -33,17 +33,17 @@ let adminDetailes : Detailes = {
     salery:1234,
 }
 
-let skiles:(String|Number|boolean)[] =["razal" ,"sjs",10,12,13,14,true]
+let skiles:(string|number|boolean)[] =["razal" ,"sjs",10,12,13,14,true]
 type GetUserName ={
-    name:String,
-    age:Number,
+    name:string,
+    age:number,
 }//we can give her the type 
-function getUserDetails(userDetails:Detailes):String|Number {
+function getUserDetails(userDetails:Detailes):string|number {
 return userDetailes?.age
  }
 
  const newValue=getUserDetails(userDetailes);
- newValue.toString()
+ newValue.tostring()
 
 
  //named types
@@ -54,4 +54,3 @@ return userDetailes?.age
  const response="pending";
 
  if(response==='pending') currStatus='pending'
- 
