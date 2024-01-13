@@ -16,9 +16,9 @@ console.log(userDetailes)
 
 //interface
 interface Detailes {
-    name:String;
-    age:Number;
-    salery:Number;
+    name?:String;//opetional
+    age?:Number | String;
+    salery?:Number;
 }
 
 let UserDetailes : Detailes = {
@@ -26,3 +26,27 @@ let UserDetailes : Detailes = {
     age:200,
     salery:20000,
 }
+
+let adminDetailes : Detailes = {
+    name:"diedx",
+    age:66,
+    salery:1234,
+}
+
+let skiles:(String|Number|boolean)[] =["razal" ,"sjs",10,12,13,14,true]
+
+function getUserDetails(userDetails:Detailes, adminDetails:Detailes):String|Number {
+    let userSalary = userDetails.salery;
+    let adminName = adminDetails.name;
+    let adminAge = adminDetails.age;
+    let adminSalary = adminDetails.salery;
+    let userName = userDetails.name;
+
+    return {
+        userSalary,
+        adminName,
+        adminAge,
+        adminSalary,
+        userName
+    };
+ }
