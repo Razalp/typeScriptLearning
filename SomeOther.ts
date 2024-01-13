@@ -18,5 +18,25 @@ function getAge<T>(age:T):T{
 }
 
 
-console.log(getAge("20"))
-console.log(getAge(20))
+console.log(getAge<string>("20"))
+console.log(getAge<number>(20))
+
+//enums
+
+enum StatusType{
+    PENDING ='pending',
+    COMPLETED ='completed',
+    FAILED ='failed',
+}
+
+
+function getStatus(message:string,status:StatusType){
+    console.log(message,"==",status)
+}
+
+console.log('1212121asas',StatusType.COMPLETED)
+
+
+//as const
+
+let Name ="razal" as const
