@@ -22,7 +22,7 @@ interface Detailes {
 }
 
 let UserDetailes : Detailes = {
-    name:'rarararar',
+    name:   'rarararar',
     age:200,
     salery:20000,
 }
@@ -34,19 +34,24 @@ let adminDetailes : Detailes = {
 }
 
 let skiles:(String|Number|boolean)[] =["razal" ,"sjs",10,12,13,14,true]
-
-function getUserDetails(userDetails:Detailes, adminDetails:Detailes):String|Number {
-    let userSalary = userDetails.salery;
-    let adminName = adminDetails.name;
-    let adminAge = adminDetails.age;
-    let adminSalary = adminDetails.salery;
-    let userName = userDetails.name;
-
-    return {
-        userSalary,
-        adminName,
-        adminAge,
-        adminSalary,
-        userName
-    };
+type GetUserName ={
+    name:String,
+    age:Number,
+}//we can give her the type 
+function getUserDetails(userDetails:Detailes):String|Number {
+return userDetailes?.age
  }
+
+ const newValue=getUserDetails(userDetailes);
+ newValue.toString()
+
+
+ //named types
+
+ type AllStutus="pending"|"completed"|"started";
+ let currStatus:AllStutus ='completed';
+
+ const response="pending";
+
+ if(response==='pending') currStatus='pending'
+ 
