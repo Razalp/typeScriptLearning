@@ -9,7 +9,20 @@ let doYouWant : boolean=true
 let skils : String[] =["JS","TS","CSS"]
 let count :Number[] =[1,2,3,4,4,5]
 let array:[]=[]
-let userDetailes : {name:String,age:Number} ={name:"razal",
+let userDetailes : {name:String,age:Number ,salery:Number} ={name:"razal",
 age:19
 }
 console.log(userDetailes)
+
+//interface
+interface Detailes {
+    name:String;
+    age:Number;
+    salery:Number;
+}
+
+let UserDetailes : Detailes = {
+    name:'rarararar',
+    age:200,
+    salery:20000,
+}

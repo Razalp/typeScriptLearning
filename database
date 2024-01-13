@@ -1,0 +1,95 @@
+// Users Collection
+{
+  "_id": ObjectId("user_id"),
+  "username": "user123",
+  "email": "user123@example.com",
+  "password": "hashed_password",
+  "fullname": "John Doe",
+  "bio": "This is my bio",
+  "profilePicture": "profile.jpg",
+  " ": ISODate("2024-01-12T12:00:00Z"),
+  "followers": [
+    ObjectId("follower_id_1"),
+    ObjectId("follower_id_2"),
+    // ... other follower IDs
+  ],
+  "following": [
+    ObjectId("followee_id_1"),
+    ObjectId("followee_id_2"),
+    // ... other followee IDs
+  ]
+}
+
+
+
+
+// Users Collection
+{
+  "_id": ObjectId("user_id"),
+  "username": "user123",
+  "email": "user123@example.com",
+  "password": "hashed_password",
+  "fullname": "John Doe",
+  "bio": "This is my bio",
+  "profilePicture": "profile.jpg",
+  "createdAt": ISODate("2024-01-12T12:00:00Z"),
+  "followers": [
+    ObjectId("follower_id_1"),
+    ObjectId("follower_id_2"),
+    // ... other follower IDs
+  ],
+  "following": [
+    ObjectId("followee_id_1"),
+    ObjectId("followee_id_2"),
+    // ... other followee IDs
+  ]
+}
+
+// Posts Collection
+{
+  "_id": ObjectId("post_id"),
+  "user": {
+    "_id": ObjectId("user_id"),
+    "username": "user123"
+    // ... other user fields if needed
+  },
+  "caption": "This is a post caption",
+  "imageUrl": "post_image.jpg",
+  "createdAt": ISODate("2024-01-13T14:30:00Z"),
+  "comments": [
+    {
+      "_id": ObjectId("comment_id_1"),
+      "user": {
+        "_id": ObjectId("commenter_id_1"),
+        "username": "commenter123"
+        // ... other user fields if needed
+      },
+      "text": "Great post!",
+      "createdAt": ISODate("2024-01-13T15:00:00Z"),
+      "likes": [
+        ObjectId("like_id_1"),
+        ObjectId("like_id_2"),
+        // ... other like IDs
+      ],
+      "reports": [
+        {
+          "_id": ObjectId("report_id_1"),
+          "user": {
+            "_id": ObjectId("reporter_id_1"),
+            "username": "reporter123"
+
+          },
+          "reason": "Inappropriate content",
+          "createdAt": ISODate("2024-01-14T12:00:00Z")
+        },
+        // ... other report objects
+      ]
+    },
+    // ... other comment objects
+  ],
+  "likes": [
+    ObjectId("like_id_1"),
+    ObjectId("like_id_2"),
+    // ... other like IDs
+  ]
+}
