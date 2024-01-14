@@ -40,3 +40,12 @@ console.log('1212121asas',StatusType.COMPLETED)
 //as const
 
 let Name ="razal" as const
+
+
+
+const statusTypes ={
+    PENDING:"pending",
+    COMPLTED:"Completed",
+    FAILED:"failed"
+
+}as const ///its we can only read 
