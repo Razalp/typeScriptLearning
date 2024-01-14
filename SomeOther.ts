@@ -49,3 +49,16 @@ const statusTypes ={
     FAILED:"failed"
 
 }as const ///its we can only read 
+
+
+
+//utliity types
+type Users={
+    readonly name:string;
+     age:number;
+}
+const userDetailess:readonly<Users> ={
+     name:"razal",
+    age:19,
+}
+//userDetailess.name="raaaaaa"   cannot set the read only propertes for any thing 
